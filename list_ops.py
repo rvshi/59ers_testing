@@ -1,5 +1,5 @@
 def get_sum(input_list):
-    pass
+    return sum(input_list)
 
 def get_min_max(input_list):
     pass
