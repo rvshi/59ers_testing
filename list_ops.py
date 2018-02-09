@@ -2,8 +2,10 @@ import numpy as np
 
 
 def get_sum(input_list):
-    '''
-    Returns the sum of a list
+    ''' returns the sum of a list
+
+    :param input_list: list to sum
+    :return: sum of list
     '''
     return sum(input_list)
 
