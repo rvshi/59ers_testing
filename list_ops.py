@@ -9,7 +9,8 @@ def get_sum(input_list):
 
 
 def get_min_max(input_list):
-    pass
+    min_max = (np.amin(input_list), np.amax(input_list))
+    return min_max
 
 
 def get_max_diff(input_list):
