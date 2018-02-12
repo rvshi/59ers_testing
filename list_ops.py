@@ -38,6 +38,16 @@ def get_max_diff(input_list):
 
 
 def check_inputs(input_list):
+    '''
+    Checks if input list fits desired format
+    param input_list: list of n integers between -9,000 and 9,000
+    input_list[i] for i = 0 to n-1
+    :raise TypeError: Input must be lists
+    :raise TypeError: Input elements must be integers
+    :raise ValueError: All input elements must be between -9,000 and
+    9,000
+    '''
+
     if(not type(input_list) is list):
         raise TypeError('Input must list')
     if(not all([type(num) is int for num in input_list])):
