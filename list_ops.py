@@ -6,6 +6,14 @@ except ImportError:
 
 
 def get_sum(input_list):
+    ''' Returns the sum of a list
+
+    :param input_list: list of n integers between -9,000 and 9,000
+    :returns: sum of all the n integers in the list
+    :raise TypeError: Input must be lists
+    :raise TypeError: Input elements must be integers
+    :raise ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
+    '''
     check_inputs(input_list)
     '''
     Returns the sum of a list
@@ -30,8 +38,7 @@ def get_max_diff(input_list):
     :raise ImportError: Numpy or other package not installed
     :raise TypeError: Input must be lists
     :raise TypeError: Input elements must be integers
-    :raise ValueError: All input elements must be between -9,000 and
-    9,000
+    :raise ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
     '''
     check_inputs(input_list)
     diff_arr = np.diff(input_list)
@@ -46,13 +53,12 @@ def check_inputs(input_list):
     input_list[i] for i = 0 to n-1
     :raise TypeError: Input must be lists
     :raise TypeError: Input elements must be integers
-    :raise ValueError: All input elements must be between -9,000 and
-    9,000
+    :raise ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
     '''
 
     if(not type(input_list) is list):
         raise TypeError('Input must list')
     if(not all([type(num) is int for num in input_list])):
         raise TypeError('All inputs in list must be integers.')
-    if(any([abs(num) > 1000000 for num in input_list])):
-        raise ValueError('All inputs must be between -9,000 and 9,000')
+    if(any([abs(num) > 9000 for num in input_list])):
+        raise ValueError('All inputs must be between -9,000 and 9,000 (inclusive)')
