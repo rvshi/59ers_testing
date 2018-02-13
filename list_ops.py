@@ -11,7 +11,8 @@ def get_sum(input_list):
     
     :param input_list: list to sum
     :return: sum of list
-    :raise ImportError: Numpy or other package not installed :raise TypeError: Input must be lists
+    :raise ImportError: Numpy or other package not installed
+    :raise TypeError: Input must be lists
     :raise TypeError: Input elements must be integers
     :raise ValueError: All input elements must be between -9,000 and 9,000
     '''
@@ -28,8 +29,7 @@ def get_max_diff(input_list):
     ''' Returns maximum difference between consecutive elements in input list
     
     :param input_list: list of n integers between -9,000 and 9,000
-    :return : returns maximum difference d defined by d = input_list[i+1] -
-    input_list[i] for i = 0 to n-1
+    :return : returns maximum difference d defined by d = input_list[i+1] - input_list[i] for i = 0 to n-1
     :raise ImportError: Numpy or other package not installed
     :raise TypeError: Input must be lists
     :raise TypeError: Input elements must be integers
