@@ -15,6 +15,7 @@ Welcome to 59ers Unit Testing and Documentation Project's documentation!
 .. automodule:: test_min_max
 .. automodule:: test_max_diff
 .. automodule:: test_check_inputs
+.. automodule:: test_import
 
 Indices and tables
 ==================
