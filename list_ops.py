@@ -16,7 +16,7 @@ def get_sum(input_list):
     return sum(input_list)
 
 
-def get_min_max(input_list):D
+def get_min_max(input_list):
     """ Returns min and max in a list
 
     :param input_list: (int) list to get min and max of
