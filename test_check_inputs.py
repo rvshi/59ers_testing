@@ -2,7 +2,6 @@ import pytest
 
 
 def test_check_inputs():
-    '''Test to check if input validation is correct'''
 
     import list_ops as lops
     error_input_list = (12,
