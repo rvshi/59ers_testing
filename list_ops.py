@@ -2,10 +2,9 @@
 Module for performing several basic operations on lists of integers.
 """
 import logging
-
 logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
 logger = logging.getLogger()
-logger.info("Start logging")
+
 
 def get_sum(input_list):
     """ Returns the sum of a list
@@ -16,22 +15,22 @@ def get_sum(input_list):
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
     """
-    logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
-    logging.info('Calculating sum of the list')
-    check_inputs(input_list)
-    logging.debug('Input list: %s', str(input_list))
+    logger.info('Calculating sum of the list')
+    logger.debug('Input list: %s', str(input_list))
+    print('calculating sum')
     try:
         check_inputs(input_list)
     except TypeError:
-        logging.warning("TypeError in get_sum")
+        logging.warning("TypeError in get_sum, must be list of integers")
     except ValueError:
-        logging.warning("ValueError in get_sum")
-
+        logging.warning("ValueError in get_sum, integers must be between -9,000 and 9,000")
+    check_inputs(input_list)
+    logger.debug('Output: %s', sum(input_list))
     return sum(input_list)
 
 
 def get_min_max(input_list):
-    logging.info('Obtaining min and max of list')
+    logger.info('Obtaining min and max of list')
     """ Returns min and max in a list
 
     :param input_list: (int) list to get min and max of
@@ -40,21 +39,22 @@ def get_min_max(input_list):
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
     """
-    logging.debug('Input list: %s', str(input_list))
+    logger.debug('Input list: %s', str(input_list))
     try:
         check_inputs(input_list)
     except TypeError:
-        logging.warning("TypeError in get_min_max")
+        logger.warning("TypeError in get_min_max, must be list of integers")
     except ValueError:
-        logging.warning("ValueError in get_min_max")
+        logger.warning("ValueError in get_min_max, must be between -9,000 and 9,000")
     check_inputs(input_list)
     np = import_modules()
     min_max = (np.amin(input_list), np.amax(input_list))
+    logger.debug('Output: %s', str(min_max))
     return min_max
 
 
 def get_max_diff(input_list):
-    logging.info('Calculating maximum difference in the list')
+    logger.info('Calculating maximum difference in the list')
     """ Returns maximum difference between consecutive elements in input list
     
     :param input_list: list of n integers between -9,000 and 9,000
@@ -64,17 +64,18 @@ def get_max_diff(input_list):
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
     """
-    logging.debug('Input list: %s', str(input_list))
+    logger.debug('Input list: %s', str(input_list))
     try:
         check_inputs(input_list)
     except TypeError:
-        logging.warning("TypeError in get_max_diff")
+        logger.warning("TypeError in get_max_diff, must be list of integers")
     except ValueError:
-        logging.warning("ValueError in get_max_diff")
+        logger.warning("ValueError in get_max_diff, must be between -9,000 and 9,000")
     check_inputs(input_list)
     np = import_modules()
     diff_arr = np.diff(input_list)
     max_diff = np.max(diff_arr)
+    logger.debug('Output: %s', str(max_diff))
     return max_diff
 
 
@@ -88,7 +89,7 @@ def import_modules():
     except (ModuleNotFoundError, ImportError) as error:
         raise ImportError(
             '''Could not import numpy. Please make sure to have the package installed''')
-    logging.info('Imported numpy module')
+    logger.info('Imported numpy module')
     return np
 
 

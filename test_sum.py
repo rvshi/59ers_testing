@@ -1,4 +1,10 @@
+import logging
+logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
+logger = logging.getLogger()
+
+
 def test_sum():
+    logger.debug('Begin testing sum function')
     from list_ops import get_sum
     input_lists = ([1, 1],
                    [2, 1, 5],

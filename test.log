@@ -1,1 +1,90 @@
-INFO:root:Start logging
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: 12
+WARNING:root:TypeError in get_sum, must be list of integers
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: 12
+WARNING:root:TypeError in get_min_max, must be list of integers
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: 12
+WARNING:root:TypeError in get_max_diff, must be list of integers
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [1, 2, 3.32]
+WARNING:root:TypeError in get_sum, must be list of integers
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [1, 2, 3.32]
+WARNING:root:TypeError in get_min_max, must be list of integers
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [1, 2, 3.32]
+WARNING:root:TypeError in get_max_diff, must be list of integers
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [4, 'GTHC', 2, 333]
+WARNING:root:TypeError in get_sum, must be list of integers
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [4, 'GTHC', 2, 333]
+WARNING:root:TypeError in get_min_max, must be list of integers
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [4, 'GTHC', 2, 333]
+WARNING:root:TypeError in get_max_diff, must be list of integers
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [85, -23, -2222222222222]
+WARNING:root:ValueError in get_sum, integers must be between -9,000 and 9,000
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [85, -23, -2222222222222]
+WARNING:root:ValueError in get_min_max, must be between -9,000 and 9,000
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [85, -23, -2222222222222]
+WARNING:root:ValueError in get_max_diff, must be between -9,000 and 9,000
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [33, 9001, -2]
+WARNING:root:ValueError in get_sum, integers must be between -9,000 and 9,000
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [33, 9001, -2]
+WARNING:root:ValueError in get_min_max, must be between -9,000 and 9,000
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [33, 9001, -2]
+WARNING:root:ValueError in get_max_diff, must be between -9,000 and 9,000
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [-9001]
+WARNING:root:ValueError in get_sum, integers must be between -9,000 and 9,000
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [-9001]
+WARNING:root:ValueError in get_min_max, must be between -9,000 and 9,000
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [-9001]
+WARNING:root:ValueError in get_max_diff, must be between -9,000 and 9,000
+DEBUG:root:Begin testing min/max function
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [1, 1, 3]
+INFO:root:Imported numpy module
+DEBUG:root:Output: 2
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [-1, 3, -16]
+INFO:root:Imported numpy module
+DEBUG:root:Output: 4
+INFO:root:Calculating maximum difference in the list
+DEBUG:root:Input list: [5, 5, 5, 5, 5]
+INFO:root:Imported numpy module
+DEBUG:root:Output: 0
+DEBUG:root:Begin testing min/max function
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [1, 1]
+INFO:root:Imported numpy module
+DEBUG:root:Output: (1, 1)
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [3, 4, 9]
+INFO:root:Imported numpy module
+DEBUG:root:Output: (3, 9)
+INFO:root:Obtaining min and max of list
+DEBUG:root:Input list: [7, 10, -2, -2]
+INFO:root:Imported numpy module
+DEBUG:root:Output: (-2, 10)
+DEBUG:root:Begin testing sum function
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [1, 1]
+DEBUG:root:Output: 2
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [2, 1, 5]
+DEBUG:root:Output: 8
+INFO:root:Calculating sum of the list
+DEBUG:root:Input list: [-3, 2, 6, 8, 9]
+DEBUG:root:Output: 22
