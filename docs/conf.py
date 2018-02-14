@@ -164,6 +164,3 @@ texinfo_documents = [
      author, '59ersUnitTestingandDocumentationProject', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-
