@@ -33,7 +33,6 @@ def get_sum(input_list):
 
 
 def get_min_max(input_list):
-    logger.info('Obtaining min and max of list')
     """ Returns min and max in a list
 
     :param input_list: (int) list to get min and max of
@@ -42,6 +41,7 @@ def get_min_max(input_list):
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
     """
+    logger.info('Obtaining min and max of list')
     logger.debug('Input list: %s', str(input_list))
     try:
         check_inputs(input_list)
