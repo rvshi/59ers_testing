@@ -6,6 +6,10 @@ logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
 logger = logging.getLogger()
 
 
+class BadNumbersException(Exception):
+    pass
+
+
 def get_sum(input_list):
     """ Returns the sum of a list
 
@@ -56,7 +60,7 @@ def get_min_max(input_list):
 
 def get_max_diff(input_list):
     """ Returns maximum difference between consecutive elements in input list
-    
+
     :param input_list: list of n integers between -9,000 and 9,000
     :returns: maximum difference d defined by d = input_list[i+1] - input_list[i] for i = 0 to n-1
     :raises ImportError: If Numpy is not installed
@@ -83,7 +87,7 @@ def get_max_diff(input_list):
 
 def import_modules():
     """ Imports required module (Numpy)
-    
+
     :returns: the module Numpy
     """
     try:
@@ -110,3 +114,5 @@ def check_inputs(input_list):
         raise TypeError('All inputs in list must be integers.')
     if(any([abs(num) > 9000 for num in input_list])):
         raise ValueError('All inputs must be between -9,000 and 9,000 (inclusive)')
+    if(123 in input_list and 321 in input_list):
+        raise BadNumbersException('List cannot contain both 123 and 321')
