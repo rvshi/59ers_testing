@@ -11,4 +11,3 @@ def test_max_diff():
     for i, nums in enumerate(input_list):
         assert get_max_diff(nums) == output_results[i]
     logger.debug('Complete testing max difference function')
-

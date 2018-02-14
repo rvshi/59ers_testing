@@ -5,6 +5,7 @@ import logging
 logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
 logger = logging.getLogger()
 
+
 def get_sum(input_list):
     """ Returns the sum of a list
 
