@@ -22,13 +22,14 @@ def get_sum(input_list):
         logging.warning("TypeError in get_sum, must be list of integers")
     except ValueError:
         logging.warning("ValueError in get_sum, integers must be between -9,000 and 9,000")
-        
+
     check_inputs(input_list)
     logger.debug('Output: %s', sum(input_list))
     return sum(input_list)
 
 
 def get_min_max(input_list):
+    logger.info('Obtaining min and max of list')
     """ Returns min and max in a list
 
     :param input_list: (int) list to get min and max of
@@ -63,7 +64,7 @@ def get_max_diff(input_list):
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
     """
     logger.info('Calculating maximum difference in the list')
-    logging.debug('Input list: %s', str(input_list))
+    logger.debug('Input list: %s', str(input_list))
     try:
         check_inputs(input_list)
     except TypeError:

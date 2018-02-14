@@ -11,5 +11,5 @@ def test_sum():
                    [-3, 2, 6, 8, 9])
     output_results = (2, 8, 22)
     for i, l in enumerate(input_lists):
-        print(l)
         assert get_sum(l) == output_results[i]
+    logger.debug('Complete testing sum function')
