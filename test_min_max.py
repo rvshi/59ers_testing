@@ -15,3 +15,4 @@ def test_min_max():
     for i, list in enumerate(input_lists):
         min_max_output = get_min_max(list)
         assert min_max_output == output_results[i]
+    logger.debug('Complete testing min/max function')
