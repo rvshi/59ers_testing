@@ -54,7 +54,11 @@ DEBUG:root:Input list: [-9001]
 WARNING:root:ValueError in get_max_diff, must be between -9,000 and 9,000
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 DEBUG:root:Begin testing min/max function
+=======
+DEBUG:root:Begin testing max difference function
+>>>>>>> yw145/logging
 =======
 DEBUG:root:Begin testing max difference function
 >>>>>>> yw145/logging
@@ -75,6 +79,10 @@ INFO:root:Imported numpy module
 DEBUG:root:Output: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+DEBUG:root:Complete testing max difference function
+>>>>>>> yw145/logging
 =======
 DEBUG:root:Complete testing max difference function
 >>>>>>> yw145/logging
@@ -96,6 +104,10 @@ INFO:root:Imported numpy module
 DEBUG:root:Output: (-2, 10)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+DEBUG:root:Complete testing min/max function
+>>>>>>> yw145/logging
 =======
 DEBUG:root:Complete testing min/max function
 >>>>>>> yw145/logging
@@ -115,8 +127,12 @@ DEBUG:root:Output: 22
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> yw145/logging
 =======
+>>>>>>> yw145/logging
+=======
+DEBUG:root:Complete testing sum function
 >>>>>>> yw145/logging
 =======
 DEBUG:root:Complete testing sum function

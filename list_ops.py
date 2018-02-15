@@ -20,10 +20,9 @@ def get_sum(input_list):
     try:
         check_inputs(input_list)
     except TypeError:
-        logging.warning("TypeError in get_sum, must be list of integers")
+        logger.error("TypeError in get_sum, must be list of integers")
     except ValueError:
-        logging.warning("ValueError in get_sum, integers must be between -9,000 and 9,000")
-
+        logger.error("ValueError in get_sum, integers must be between -9,000 and 9,000")
     check_inputs(input_list)
     logger.debug('Output: %s', sum(input_list))
     return sum(input_list)
@@ -43,10 +42,9 @@ def get_min_max(input_list):
     try:
         check_inputs(input_list)
     except TypeError:
-        logger.warning("TypeError in get_min_max, must be list of integers")
+        logger.error("TypeError in get_min_max, must be list of integers")
     except ValueError:
-        logger.warning("ValueError in get_min_max, must be between -9,000 and 9,000")
-
+        logger.error("ValueError in get_min_max, must be between -9,000 and 9,000")
     check_inputs(input_list)
     np = import_modules()
     min_max = (np.amin(input_list), np.amax(input_list))
@@ -72,7 +70,6 @@ def get_max_diff(input_list):
         logger.warning("TypeError in get_max_diff, must be list of integers")
     except ValueError:
         logger.warning("ValueError in get_max_diff, must be between -9,000 and 9,000")
-
     check_inputs(input_list)
     np = import_modules()
     diff_arr = np.diff(input_list)
