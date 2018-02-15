@@ -21,9 +21,9 @@ def get_sum(input_list):
     try:
         check_inputs(input_list)
     except TypeError:
-        logging.warning("TypeError in get_sum, must be list of integers")
+        logger.error("TypeError in get_sum, must be list of integers")
     except ValueError:
-        logging.warning("ValueError in get_sum, integers must be between -9,000 and 9,000")
+        logger.error("ValueError in get_sum, integers must be between -9,000 and 9,000")
     check_inputs(input_list)
     logger.debug('Output: %s', sum(input_list))
     return sum(input_list)
