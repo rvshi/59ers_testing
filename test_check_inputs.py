@@ -1,8 +1,14 @@
 import pytest
+import logging
+from logging_config import config
+
+# init logging config
+logging.basicConfig(**config)
+logger = logging.getLogger(__name__)
 
 
 def test_check_inputs():
-
+    logger.debug('Begin testing check inputs function')
     import list_ops as lops
     error_input_list = (12,
                         [1, 2, 3.32],
@@ -21,3 +27,5 @@ def test_check_inputs():
             lops.get_min_max(nums)
         with pytest.raises(error_output_list[i]):
             lops.get_max_diff(nums)
+    
+    logger.debug('Complete testing check inputs function')

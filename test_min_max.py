@@ -1,6 +1,9 @@
 import logging
-logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
-logger = logging.getLogger()
+from logging_config import config
+
+# init logging config
+logging.basicConfig(**config)
+logger = logging.getLogger(__name__)
 
 
 def test_min_max():
