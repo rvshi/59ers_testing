@@ -18,6 +18,7 @@ def get_sum(input_list):
     :raises TypeError: Input must be lists
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
+    :raises BadNumbersException: Numbers 123 and 321 cannot be in same list
     """
     logger.info('Calculating sum of the list')
     logger.debug('Input list: %s', str(input_list))
@@ -42,6 +43,8 @@ def get_min_max(input_list):
     :raises TypeError: Input must be lists
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
+    :raises BadNumbersException:
+    :raises BadNumbersException: Numbers 123 and 321 cannot be in same list
     """
     logger.debug('Input list: %s', str(input_list))
     try:
@@ -67,6 +70,7 @@ def get_max_diff(input_list):
     :raises TypeError: Input must be lists
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
+    :raises BadNumbersException: Numbers 123 and 321 cannot be in same list
     """
     logger.info('Calculating maximum difference in the list')
     logger.debug('Input list: %s', str(input_list))
@@ -106,6 +110,7 @@ def check_inputs(input_list):
     :raises TypeError: Input must be lists
     :raises TypeError: Input elements must be integers
     :raises ValueError: All input elements must be between -9,000 and 9,000 (inclusive)
+    :raises BadNumbersException: Numbers 123 and 321 cannot be in same list
     """
 
     if(not type(input_list) is list):
