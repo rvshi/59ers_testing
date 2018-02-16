@@ -1,3 +1,4 @@
 env/
 .pytest_cache/
 docs/_build
+test.log
