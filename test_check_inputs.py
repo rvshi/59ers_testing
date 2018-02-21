@@ -1,5 +1,4 @@
 import pytest
-from list_ops import BadNumbersException
 import logging
 from logging_config import config
 
@@ -10,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 def test_check_inputs():
     logger.debug('Begin testing check inputs function')
-    import list_ops as lops
+    from listops import BadNumbersException, ListOps
     error_input_list = (12,
                         [1, 2, 3.32],
                         [4, 'GTHC', 2, 333],
@@ -25,9 +24,9 @@ def test_check_inputs():
     # loop over exception triggers and module functions
     for i, nums in enumerate(error_input_list):
         with pytest.raises(error_output_list[i]):
-            lops.get_sum(nums)
+            ListOps(nums)
         with pytest.raises(error_output_list[i]):
-            lops.get_min_max(nums)
+            ListOps(nums)
         with pytest.raises(error_output_list[i]):
-            lops.get_max_diff(nums)
+            ListOps(nums)
     logger.debug('Complete testing check inputs function')
