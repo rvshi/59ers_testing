@@ -13,8 +13,8 @@ def test_import():
     logger.debug('Begin testing import')
     # remove the numpy library
     with mock.patch.dict('sys.modules', {'numpy': None}):
-        from list_ops import import_modules
+        from listops import ListOps
 
         with pytest.raises(ImportError):
-            import_modules()
+            ListOps([])
     logger.debug('Complete testing import')
