@@ -10,13 +10,12 @@ Welcome to 59ers Unit Testing and Documentation Project's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: list_ops
+.. automodule:: listops
 .. automodule:: test_sum
 .. automodule:: test_min_max
 .. automodule:: test_max_diff
 .. automodule:: test_check_inputs
 .. automodule:: test_import
-.. automodule:: logging_config
 
 Indices and tables
 ==================
