@@ -13,7 +13,7 @@ class ListOps:
     def __init__(self, l):
         """Inits the list object for internal storage.
         
-        :param list: list to input
+        :param l: list of integers to perform operations on
         """
         # init logging config
         logging.basicConfig(**config)
@@ -25,6 +25,9 @@ class ListOps:
 
     @property
     def list(self):
+        """List object for class
+        """
+
         return self.__list
 
     @list.setter
